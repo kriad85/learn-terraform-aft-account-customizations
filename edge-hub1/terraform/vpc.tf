@@ -31,7 +31,7 @@ resource "aws_subnet" "edge_hub_subnets" {
   count = 2
   vpc_id            = aws_vpc.edge_hub_vpc.id
   cidr_block        = cidrsubnet(aws_vpc.edge_hub_vpc.cidr_block, 4, count.index)
-  availability_zone = element(["us-east-1a", "us-east-1b"], count.index)
+  availability_zone = element(["eu-west-3a", "eu-west-3b"], count.index)
 
   tags = {
     Name = "EdgeHub-Subnet-${count.index}"
