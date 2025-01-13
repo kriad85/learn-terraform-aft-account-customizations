@@ -4,7 +4,7 @@ provider "aws" {
   region = "eu-west-3" # Replace with your desired region
 
   assume_role {
-    role_arn    = "arn:aws:iam::043309348131:role/aft-custo-account-role"
+    role_arn    = "arn:aws:iam::043309348131:role/AWSAFTExecution"
   }
 }
 
