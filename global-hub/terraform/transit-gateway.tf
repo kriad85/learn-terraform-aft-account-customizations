@@ -4,8 +4,7 @@ provider "aws" {
   region = "eu-west-3" # Replace with your desired region
 
   assume_role {
-    role_arn     = "arn:aws:iam::043309348131:role/aft-custo-account-role"
-    session_name = "TerraformAssumeRoleSession"
+    role_arn    = "{{ target_admin_role_arn }}"
   }
 }
 
