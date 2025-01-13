@@ -1,7 +1,7 @@
 # Provider configuration for the AFT management account using assume_role
 provider "aws" {
   alias  = "controller"
-  region = "us-east-1" # Replace with your desired region
+  region = "eu-west-3" # Replace with your desired region
 
   assume_role {
     role_arn     = "arn:aws:iam::043309348131:role/aft-custo-account-role"
